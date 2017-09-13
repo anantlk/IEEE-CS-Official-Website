@@ -2,11 +2,12 @@
 height:100%;
 width:100%;
 color: white;
-background-color: white;
+background-color: #4ba1ae;
 z-index: -1;
 margin-right:0px;
 padding:0;
 }
+
 @media(min-width:768px){
   .m_navbar{display:none;}
   .sidenav{display:none;}
@@ -108,10 +109,28 @@ color: white;
   font-size: 40px;
 }
 #margins{
-  margin-left: 15px;
-  margin-right: 15px;
+  border-style: solid;
+  border-color: white;
+  border-left-width: 15px;
+  border-right-width: 15px;
+  margin-top:0px;
 }
 #About{
   height: 100vh;
   background-color: #4ba1ae;
+
+}
+#head{
+font-size: 40px;
+font-weight: bold;
+}
+#AboutText{
+  margin-left: 70px;
+  height:80vh;
+  text-align: justify;
+  padding-top:25vh;
+  width:80%;
+  color:white;
+  font-size:20px;
+
 }
