@@ -1,0 +1,117 @@
+.body{
+height:100%;
+width:100%;
+color: white;
+background-color: white;
+z-index: -1;
+margin-right:0px;
+padding:0;
+}
+@media(min-width:768px){
+  .m_navbar{display:none;}
+  .sidenav{display:none;}
+.navbar{
+width:100%;
+position: fixed;
+border-radius: 0px;
+background:black;
+padding:15px;
+height:15vh;
+z-index:1;
+}
+#navtext{  color:grey;
+}
+#navtext:hover,#navtext:active{
+  color:#4ba1ae;
+}
+#logo{
+  height:70px;
+   width: 155px;
+}
+#pages{
+  padding-top:4vh;
+color:grey;
+font-size: 20px;
+text-align: left;
+}
+.c_navtext{
+  text-align: center;
+}
+}
+@media(max-width:767px){
+  .navbar{display:none;}
+  .m_navbar{
+  width:100%;
+  position: fixed;
+  border-radius: 0px;
+  background:black;
+  height:13vh;
+  padding: 15px;
+  padding-top:30px;
+  z-index:1;
+  }
+
+  #logo{
+    height:40px;
+     width: 105px;
+  }
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 8vh;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+  .sidenav a:hover {
+      color: #4ba1ae;
+  }
+  .sidenav .closebtn {
+    color:white;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+
+
+
+}
+#home{
+  background-image: url(black.png);
+  height:100vh;
+  width:100%;
+}
+#h_text{
+margin-top: 50vh;
+}
+#hometext{
+
+position: relative;
+text-align: center;
+color: white;
+  font-size: 40px;
+}
+#margins{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#About{
+  height: 100vh;
+  background-color: #4ba1ae;
+}
