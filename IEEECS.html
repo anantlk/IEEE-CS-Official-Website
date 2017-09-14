@@ -4,10 +4,11 @@
    <title>IEEE-CS</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="events-style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-
-  <script src="scripts.js"></script>
  </head>
  <body>
         <div class="container-fluid">
@@ -21,11 +22,11 @@
                 <div class="pages col-lg-6 col-md-7 col-sm-9">
                   <div class="row">
                     <div id="pages" class="col-sm-12">
-                    <a href="#homepage"><div class="navtext col-sm-2"><p id="navtext">HOME</p></div></a>
-                    <a href="#Aboutpage"><div class="navtext col-sm-2"><p id="navtext">ABOUT</p></div></a>
-                    <a href="#"><div class="navtext col-sm-2"><p id="navtext">EVENTS</p></div></a>
-                    <a href="#Teampage"><div class="navtext col-sm-2"><p id="navtext">TEAM</p></div></a>
-                    <a href="#Contactuspage"><div class="navtext c_text col-sm-4"><p id="navtext">CONTACT US</p></div></a>
+                    <a href="#homepage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-home">HOME</p></div></a>
+                    <a href="#Aboutpage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
+                    <a href="#Eventspage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
+                    <a href="#Teampage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
+                    <a href="#Contactuspage"><div class="navtext c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
@@ -33,11 +34,11 @@
             </div>
             <div class="nav-sidebar sidenav" style="width:200px;right:0;" id="mySidebar">
 
-              <a href="#homepage"><div class="navtext" onclick="nav_close()"><p id="navtext">HOME</p></div></a>
-              <a href="#Aboutpage"><div class="navtext" onclick="nav_close()"><p id="navtext"  >ABOUT</p></div></a>
-              <a href="#"><div class="navtext" onclick="nav_close()"><p id="navtext" >EVENTS</p></div></a>
-              <a href="#Teampage"><div class="navtext" onclick="nav_close()"><p id="navtext" >TEAM</p></div></a>
-              <a href="#Contactuspage"><div class="navtext" onclick="nav_close()"><p id="navtext" >CONTACT US</p></div></a>
+              <a href="#homepage"><div class="navtext" onclick="nav_close()"><p class="nav-text">HOME</p></div></a>
+              <a href="#Aboutpage"><div class="navtext" onclick="nav_close()"><p class="nav-text"  >ABOUT</p></div></a>
+              <a href="#"><div class="navtext" onclick="nav_close()"><p class="nav-text" >EVENTS</p></div></a>
+              <a href="#Teampage"><div class="navtext" onclick="nav_close()"><p class="nav-text" >TEAM</p></div></a>
+              <a href="#Contactuspage"><div class="navtext" onclick="nav_close()"><p classs="nav-text" >CONTACT US</p></div></a>
             </div>
               <div class="m_navbar">
                 <div class="row">
@@ -56,8 +57,8 @@
               <div class="row">
                 <div class="row">
               <div id="h_text">
-              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.<br>
-                <a href="#Aboutpage"><img id="downi" src="arrow.png"></a></p></div></div>
+              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br><br>
+                <p id="down-arrow"><a href="#Aboutpage"><img id="downi" src="arrow.png"></a></p></div></div>
               </div>
             </div>
             </section>
@@ -71,6 +72,68 @@
                       <p>At VIT, this society aims at creating awareness about the new advances in the field of Computer Science and imparting knowledge related to this field by conducting different workshops and events throughout the semester. It gives substantial benefit to all the computer enthusiasts as well as provides a support to other students to know more about the technology that is ruling the world today.</p>
                   </div>
               </div>
+            </section>
+            <section id="Eventspage">
+            <div class="timeline">
+                          <div class="entry">
+                  <div class="title">
+                    <h3>2014 - Present</h3>
+                    <p>Title, Company</p>
+                  </div>
+                  <div class="body">
+                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                    <ul>
+                      <li>Rerum sit libero possimus amet excepturi</li>
+                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="title">
+                    <h3>2010 - Present</h3>
+                    <p>Title, Company</p>
+                  </div>
+                  <div class="body">
+                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                    <ul>
+                      <li>Rerum sit libero possimus amet excepturi</li>
+                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="title">
+                    <h3>2009 - 2010</h3>
+                    <p>Title, Company</p>
+                  </div>
+                  <div class="body">
+                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                    <ul>
+                      <li>Rerum sit libero possimus amet excepturi</li>
+                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="title">
+                    <h3>2006 - 2008</h3>
+                    <p>Title, Company</p>
+                  </div>
+                  <div class="body">
+                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                    <ul>
+                      <li>Rerum sit libero possimus amet excepturi</li>
+                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
             </section>
             <section id="Teampage">
               <div id="Team">
@@ -220,4 +283,113 @@
 
 
  </body>
+ <script type="text/javascript">
+   $(document).ready(function(){
+    w=$(window).width();
+       //About Page
+
+   $("#menu-about").on("click",function(){
+      $("#menu-events").removeClass("active");
+      $("#menu-home").removeClass("active");
+      $("#menu-team").removeClass("active");
+      $("#menu-contact").removeClass("active");
+      $("#menu-about").removeClass("active").addClass("active");
+    });
+
+   //events page
+
+   $("#menu-events").on("click",function(){
+    $("#menu-about").removeClass("active");
+    $("#menu-home").removeClass("active");
+    $("#menu-team").removeClass("active");
+    $("#menu-contact").removeClass("active");
+    $("#menu-events").removeClass("active").addClass("active");
+    });
+
+   //team page
+
+    $("#menu-team").on("click",function(){
+    $("#menu-about").removeClass("active");
+    $("#menu-home").removeClass("active");
+    $("#menu-events").removeClass("active");
+    $("#menu-contact").removeClass("active");
+    $("#menu-team").removeClass("active").addClass("active");
+  });
+
+    //contact page
+    $("#menu-contact").on("click",function(){
+    $("#menu-about").removeClass("active");
+    $("#menu-home").removeClass("active");
+    $("#menu-events").removeClass("active");
+    $("#menu-team").removeClass("active");
+    $("#menu-contact").removeClass("active").addClass("active");
+  });
+
+    var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+    if(w<=768)
+    {
+        var h=$(".m_navbar").height();
+     $(window).on("scroll",function(){
+    var win_top=$(window).scrollTop();
+    if(win_top>=x1-5)
+    {
+      //$(".m_navbar").css("height",h+'px');
+      $(".m_navbar").css("display","block");
+      $(".m_navbar").addClass("animated").addClass("slideInDown");
+    }
+    else
+    {
+        $(".m_navbar").css("display","none");
+    }
+    });
+   }
+    else
+    { 
+    var h=$(".navbar").height();
+    $(window).on("scroll",function(){
+    var win_top=$(window).scrollTop();
+
+    //About page
+    if(win_top>=x1-5 && win_top<x2-5)
+    {
+      $("#menu-about").addClass("active");
+    }
+    else
+    {
+      $("#menu-about").removeClass("active");
+    }
+
+    //Events page
+    if(win_top>=x2-5 && win_top<x3-5)
+    {
+      $("#menu-events").addClass("active");
+    }
+    else
+    {
+      $("#menu-events").removeClass("active");
+    }
+    //team page
+    if(win_top>=x3-5 && win_top<x4-5)
+    {
+      $("#menu-team").addClass("active");
+    }
+    else
+    {
+      $("#menu-team").removeClass("active");
+    }
+    //navbar-show
+    if(win_top>=x1-5)
+    {
+      $(".navbar").css("height",h+'px');
+      $(".navbar").css("display","block");
+      $(".navbar").addClass("animated").addClass("slideInDown");
+    }
+    else
+    {
+        $(".navbar").css("display","none");
+    }
+    });
+  }
+});
+ </script>
  </html>
