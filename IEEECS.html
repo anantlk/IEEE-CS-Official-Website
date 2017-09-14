@@ -6,23 +6,12 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
   <script src="scripts.js"></script>
  </head>
  <body>
-   <div id="mySidenav" class="sidenav">
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <a id="navtext" href="#homepage"><div class="navtext col-sm-2"><p >HOME</p></div></a>
-     <a id="navtext" href="#Aboutpage"><div class="navtext col-sm-2"><p>ABOUT</p></div></a>
-     <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-2"><p>EVENTS</p></div></a>
-     <a id="navtext" href="https://www.google.com"><div class="navtext c_navtext col-sm-2"><p>TEAM</p></div></a>
-     <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-4"><p>CONTACT US</p></div></a>
-
-   </div>
-
         <div class="container-fluid" style="padding:0;">
-
           <div class="row">
-            <div id="main">
             <div class="navbar">
               <div class="row">
                 <div class="logodiv col-sm-2">
@@ -42,19 +31,28 @@
                 </div>
               </div>
             </div>
-
-            <div class="m_navbar">
-              <div class="row">
-                <div class="logodiv col-xs-2">
-                    <img id="logo" src="logo.png">
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2 w3-animate-right sidenav" style="width:200px;right:0;" id="mySidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="w3_close()">&times;</a>
+              <a id="navtext" href="#homepage"><div class="navtext col-sm-2"><p >HOME</p></div></a>
+              <a id="navtext" href="#Aboutpage"><div class="navtext col-sm-2"><p>ABOUT</p></div></a>
+              <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-2"><p>EVENTS</p></div></a>
+              <a id="navtext" href="https://www.google.com"><div class="navtext c_navtext col-sm-2"><p>TEAM</p></div></a>
+              <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-4"><p>CONTACT US</p></div></a>
+            </div>
+              <div class="m_navbar">
+                <div class="row">
+                  <div class="logodiv col-xs-2">
+                      <img id="logo" src="logo.png">
+                  </div>
+                  <div class="col-xs-9"></div>
+                  <div class="col-xs-1">
+                    <div class="row">
+                          <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+                    </div></div>
+                  </div>
+                  </div>
                 </div>
-                <div class="col-xs-9"></div>
-                <div class="col-xs-1">
-                  <div class="row">
-                    <span style="color:white;font-size:25px;cursor:pointer" onclick="openNav()">&#9776;
-                  </div></div>
-                </div>
-                </div>
+              </div>
               </div>
             </div>
             <section id="homepage">

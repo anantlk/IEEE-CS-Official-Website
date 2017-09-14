@@ -1,11 +1,13 @@
-.body{
+body{
 height:100%;
 width:100%;
 color: white;
-background-color: #4ba1ae;
+background-color: white;
 z-index: -1;
 margin-right:0px;
 padding:0;
+max-width:100%;
+overflow-x: hidden;
 }
 
 @media(min-width:768px){
@@ -13,9 +15,10 @@ padding:0;
   .sidenav{display:none;}
 .navbar{
 width:100%;
+margin-left: 15px;
 position: fixed;
 border-radius: 0px;
-background:black;
+background-color:black;
 padding:15px;
 height:15vh;
 z-index:1;
@@ -62,11 +65,12 @@ text-align: left;
       position: fixed;
       z-index: 2;
       top: 0;
-      left: 0;
+      right: 0;
       background-color: #111;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 8vh;
+      display: none;
   }
 
   .sidenav a {
@@ -103,7 +107,6 @@ margin-top: 50vh;
 }
 #hometext{
 
-position: relative;
 text-align: center;
 color: white;
   font-size: 40px;
@@ -113,7 +116,9 @@ color: white;
   border-color: white;
   border-left-width: 15px;
   border-right-width: 15px;
-  margin-top:0px;
+  border-top-width:0px;
+  border-bottom-width:0px;
+
 }
 #About{
   height: 100vh;
