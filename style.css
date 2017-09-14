@@ -4,60 +4,186 @@ width:100%;
 color: white;
 background-color: white;
 z-index: -1;
-margin-right:0px;
 padding:0;
-max-width:100%;
-overflow-x: hidden;
-}
+margin:0px;
 
-@media(min-width:768px){
-  .m_navbar{display:none;}
-  .sidenav{display:none;}
+}
+.row
+{
+  margin:0px;
+  padding:0px;
+}
+.container-fluid{
+  padding-left:0px;
+  padding-right:0px;
+  margin:0px;
+}
+@media(min-width:769px){
+.m_navbar{display:none;}
+.sidenav{display:none;}
 .navbar{
 width:100%;
-margin-left: 15px;
+padding-left: 15px;
 position: fixed;
 border-radius: 0px;
 background-color:black;
-padding:15px;
-height:15vh;
+height:11vh;
 z-index:1;
+padding-right: 0;
+
 }
-#navtext{  color:grey;
+#navtext{  color:grey;  padding-top:20px;
 }
-#navtext:hover,#navtext:active{
-  color:#4ba1ae;
+#navtext:hover{color:white;}
+#navtext:active{color:#4ba1ae;}
+.navtext p:active{
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color:#4ba1ae;
+}
+.c_text{
+  text-align: left;
 }
 #logo{
   height:70px;
    width: 155px;
 }
 #pages{
-  padding-top:4vh;
+
 color:grey;
 font-size: 20px;
-text-align: left;
+text-align: center;
 }
-.c_navtext{
-  text-align: center;
+
+#Team{height:250vh;}
 }
+
+#home{
+  background-image: url(black.png);
+  height:100vh;
+  width:100%;
 }
-@media(max-width:767px){
+#h_text{
+margin-top: 50vh;
+}
+#hometext{
+
+text-align: center;
+color: white;
+  font-size: 30px;
+}
+#margins{
+  border-style: solid;
+  border-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top-width:0px;
+  border-bottom-width:0px;
+
+}
+#About,#Team{
+  height: 100vh;
+  background-color: #4ba1ae;
+
+}
+#ContactUs{height:50vh;background-color:grey;}
+  #Team{height:250vh;}
+#head{
+font-size: 40px;
+font-weight: bold;
+}
+
+#AboutText{
+  margin-left: 90px;
+  height:80vh;
+  text-align: justify;
+  padding-top:25vh;
+  width:80%;
+  color:white;
+  font-size:20px;
+}
+#TeamText{
+  margin-left: 90px;
+  text-align: justify;
+  padding-top:20vh;
+  width:80%;
+  color:white;
+  font-size:20px;
+}
+#ContactText{
+  margin-left: 90px;
+  text-align: justify;
+  padding-top:0vh;
+  width:80%;
+  color:white;
+  font-size:20px;
+}
+.img1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat',sans-serif;
+  color: white;
+}
+.show{
+  height: 250px;
+  width: 250px;
+}
+#teampics{
+  height: 250px;
+  width: 250px;
+}
+#board{
+  padding: 5px;
+  font-size: 15px;
+
+  position: relative;
+
+  text-align: left;
+  top: 40px;
+}
+#initials{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  text-align: right;
+  bottom: 40px;
+}
+.space1{
+  width:100%;
+  height:30px;
+}
+
+.col1{
+  margin-left:65px;
+}
+.leftbox{
+display:flex;
+justify-content: flex-end;
+}
+.centrebox{
+  display:flex;
+  justify-content: center;
+}
+.rightbox{
+  display: flex;
+  justify-content: flex-start;
+}
+@media(max-width:768px){
   .navbar{display:none;}
   .m_navbar{
   width:100%;
   position: fixed;
   border-radius: 0px;
   background:black;
-  height:13vh;
+  height:11vh;
   padding: 15px;
-  padding-top:30px;
+  padding-top:15px;
   z-index:1;
   }
-
   #logo{
-    height:40px;
-     width: 105px;
+    height:50px;
+     width: 115px;
+     margin-left: 0px;
   }
   .sidenav {
       height: 100%;
@@ -65,7 +191,7 @@ text-align: left;
       position: fixed;
       z-index: 2;
       top: 0;
-      right: 0;
+      left: 0;
       background-color: #111;
       overflow-x: hidden;
       transition: 0.5s;
@@ -81,61 +207,216 @@ text-align: left;
       display: block;
       transition: 0.3s;
   }
-  .sidenav a:hover {
-      color: #4ba1ae;
-  }
-  .sidenav .closebtn {
+
+  #hometext{font-size: 20px;}
+  #AboutText{
+    margin-left: 70px;
+    height:80vh;
+    text-align: justify;
+    padding-top:25vh;
+    width:80%;
     color:white;
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
+    font-size:15px;
+  }
+  .show{
+    height: 150px;
+    width: 150px;
+  }
+  #teampics{
+    height: 150px;
+    width: 150px;
+  }
+  #board{
+    padding: 5px;
+    font-size: 12px;
+
+    position: relative;
+
+    text-align: left;
+    top: 35px;
+  }
+  #initials{
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    text-align: right;
+    bottom: 35px;
+  }
+  .space1{
+    width:100%;
+    height:20px;
+  }
+  .col1{
+    margin-left:30px;
+  }
+  #Team{height:200vh;}
+}
+#smallicon{
+  width:20px;
+  height:20px;
+}
+.contact2{
+  display: flex;
+  justify-content: flex-end;
+}
+#icon1{
+  height:50px;
+  width: 25px;
+  padding-top: 10px;
+  margin-left: 30px;
+}
+#icon2{
+  height:50px;
+  width: 45px;
+  padding-top: 10px;
+  margin-left: 35px;
+}
+#icon3{
+height:50px;
+width: 45px;
+padding-top: 10px;
+margin-left: 30px;
+}
+@media(max-width:550px){
+  #AboutText{
       margin-left: 50px;
+      height:80vh;
+      text-align: justify;
+      padding-top:20vh;
+      width:80%;
+      color:white;
+      font-size:12px;
+    }
+    #TeamText,#ContactText{
+      margin-left: 90px;
+      text-align: justify;
+      padding-top:20vh;
+      width:80%;
+      color:white;
+      font-size:12px;
+    }
+    .show{
+      height: 100px;
+      width: 100px;
+    }
+    #teampics{
+      height: 100px;
+      width: 100px;
+    }
+    #board{
+      padding: 2px;
+      font-size: 12px;
+
+      position: relative;
+
+      text-align: left;
+      top: 30px;
+    }
+    #initials{
+      font-size: 12px;
+      font-weight: normal;
+      position: relative;
+      text-align: right;
+      bottom: 30px;
+    }
+    .space1{
+      width:100%;
+      height:15px;
+    }
+    .col1{
+      margin-left:20px;
+    }
+    #Team{height:150vh;}
+#head{font-size: 20px;}
+.contact2{
+  display: flex;
+  justify-content: center;
+}
+
+#icon1{
+  height:35px;
+  width: 20px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+#icon2{
+  height:35px;
+  width: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+#icon3{
+height:35px;
+width: 25px;
+padding-top: 10px;
+margin-left: 10px;
+}
+  }
+@media(max-width:400px){
+  #hometext{
+
+  text-align: center;
+  color: white;
+    font-size: 16px;
+  }
+  #AboutText{
+    margin-left: 20px;
+    height:80vh;
+    text-align: justify;
+    padding-top:20vh;
+    width:80%;
+    color:white;
+    font-size:12px;
+  }
+  .contact2{
+    display: flex;
+    justify-content: flex-start;
   }
 
+}
+@media(max-width:374px){
+  #head{
+  font-size: 20px;
+  font-weight: bold;
+  }
 
+  #TeamText,#ContactText{
+    margin-left: 20px;
+    text-align: justify;
+    padding-top:20vh;
+    width:80%;
+    color:white;
+    font-size:12px;
+  }
+  .show{
+    height: 80px;
+    width: 80px;
+  }
+  #teampics{
+    height: 80px;
+    width: 80px;
+  }
+  #board{
+    padding: 2px;
+    font-size: 10px;
 
-
-}
-#home{
-  background-image: url(black.png);
-  height:100vh;
-  width:100%;
-}
-#h_text{
-margin-top: 50vh;
-}
-#hometext{
-
-text-align: center;
-color: white;
-  font-size: 40px;
-}
-#margins{
-  border-style: solid;
-  border-color: white;
-  border-left-width: 15px;
-  border-right-width: 15px;
-  border-top-width:0px;
-  border-bottom-width:0px;
-
-}
-#About{
-  height: 100vh;
-  background-color: #4ba1ae;
-
-}
-#head{
-font-size: 40px;
-font-weight: bold;
-}
-#AboutText{
-  margin-left: 70px;
-  height:80vh;
-  text-align: justify;
-  padding-top:25vh;
-  width:80%;
-  color:white;
-  font-size:20px;
+    position: relative;
+    text-align: left;
+    top: 25px;
+  }
+  #initials{
+    font-size: 10px;
+    font-weight: normal;
+    position: relative;
+    text-align: right;
+    bottom: 30px;
+  }
+  .space1{
+    width:100%;
+    height:15px;
+  }
+  .col1{
+    margin-left:0px;
+  }
 
 }

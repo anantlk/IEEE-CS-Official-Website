@@ -1,6 +1,6 @@
-function w3_open() {
+function nav_open() {
     document.getElementById("mySidebar").style.display = "block";
 }
-function w3_close() {
+function nav_close() {
     document.getElementById("mySidebar").style.display = "none";
 }

@@ -10,51 +10,47 @@
   <script src="scripts.js"></script>
  </head>
  <body>
-        <div class="container-fluid" style="padding:0;">
+        <div class="container-fluid">
           <div class="row">
             <div class="navbar">
               <div class="row">
                 <div class="logodiv col-sm-2">
                     <img id="logo" src="logo.png">
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-1"></div>
+                <div class="col-lg-4 col-md-3 hidden-sm"></div>
                 <div class="pages col-lg-6 col-md-7 col-sm-9">
                   <div class="row">
                     <div id="pages" class="col-sm-12">
-                    <a id="navtext" href="#homepage"><div class="navtext col-sm-2"><p >HOME</p></div></a>
-                    <a id="navtext" href="#Aboutpage"><div class="navtext col-sm-2"><p>ABOUT</p></div></a>
-                    <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-2"><p>EVENTS</p></div></a>
-                    <a id="navtext" href="https://www.google.com"><div class="navtext c_navtext col-sm-2"><p>TEAM</p></div></a>
-                    <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-4"><p>CONTACT US</p></div></a>
+                    <a href="#homepage"><div class="navtext col-sm-2"><p id="navtext">HOME</p></div></a>
+                    <a href="#Aboutpage"><div class="navtext col-sm-2"><p id="navtext">ABOUT</p></div></a>
+                    <a href="#"><div class="navtext col-sm-2"><p id="navtext">EVENTS</p></div></a>
+                    <a href="#Teampage"><div class="navtext col-sm-2"><p id="navtext">TEAM</p></div></a>
+                    <a href="#Contactuspage"><div class="navtext c_text col-sm-4"><p id="navtext">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
               </div>
             </div>
-            <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2 w3-animate-right sidenav" style="width:200px;right:0;" id="mySidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="w3_close()">&times;</a>
-              <a id="navtext" href="#homepage"><div class="navtext col-sm-2"><p >HOME</p></div></a>
-              <a id="navtext" href="#Aboutpage"><div class="navtext col-sm-2"><p>ABOUT</p></div></a>
-              <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-2"><p>EVENTS</p></div></a>
-              <a id="navtext" href="https://www.google.com"><div class="navtext c_navtext col-sm-2"><p>TEAM</p></div></a>
-              <a id="navtext" href="https://www.google.com"><div class="navtext col-sm-4"><p>CONTACT US</p></div></a>
+            <div class="nav-sidebar sidenav" style="width:200px;right:0;" id="mySidebar">
+
+              <a href="#homepage"><div class="navtext" onclick="nav_close()"><p id="navtext">HOME</p></div></a>
+              <a href="#Aboutpage"><div class="navtext" onclick="nav_close()"><p id="navtext"  >ABOUT</p></div></a>
+              <a href="#"><div class="navtext" onclick="nav_close()"><p id="navtext" >EVENTS</p></div></a>
+              <a href="#Teampage"><div class="navtext" onclick="nav_close()"><p id="navtext" >TEAM</p></div></a>
+              <a href="#Contactuspage"><div class="navtext" onclick="nav_close()"><p id="navtext" >CONTACT US</p></div></a>
             </div>
               <div class="m_navbar">
                 <div class="row">
-                  <div class="logodiv col-xs-2">
-                      <img id="logo" src="logo.png">
-                  </div>
-                  <div class="col-xs-9"></div>
+
+
                   <div class="col-xs-1">
                     <div class="row">
-                          <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
-                    </div></div>
+                          <span style="font-size:30px;cursor:pointer" onclick="nav_open()">&#9776;</span>
+                    </div></div>  <div class="col-xs-6"></div>  <div class="logodiv col-xs-2">
+                          <img id="logo" src="logo.png">
+                      </div>
                   </div>
                   </div>
-                </div>
-              </div>
-              </div>
-            </div>
             <section id="homepage">
               <div id="home">
               <div class="row">
@@ -76,10 +72,147 @@
                   </div>
               </div>
             </section>
+            <section id="Teampage">
+              <div id="Team">
+                <div class="row">
+                  <div id="TeamText"><br><p id="head">TEAM</p>
+                    <p> fjkefkkmfdmffkfkdmfdflflslds;dl;sdsd;l<br>jisjfsjfkskfksfslkdl.</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="boxes">
+                    <div class="row">
+                      <div class"centrebox">
+                    <div class="img1">
+                      <div class="show">
+                        <p id="board">President</p>
+                        <img id="teampics" src="samplepic.jpg" >
+                        <h1 id="initials">Waris Chutani</h1>
+                      </div>
+                    </div>
+                  </div></div>
+                  <div class="row">
+                    <div class="space1 col-xs-12"></div>
+                  </div>
+                      <div class="row">
+                          <div class="col1 col-xs-1"></div>
+                        <div class="leftbox col-xs-3">
+                                    <div class="img1 show1">
+                                      <div class="show">
+                                        <p id="board">Board2</p>
+                                        <img id="teampics" src="samplepic.jpg" >
+                                        <h1 id="initials">BM2</h1>
+                                      </div></div></div>
+                          <div class="centrebox col-xs-3">
+                                    <div class="img1">
+                                      <div class="show">
+                                        <p id="board">Board3</p>
+                                        <img id="teampics" src="samplepic.jpg" >
+                                        <h1 id="initials">BM3</h1>
+                                      </div></div></div>
+                                      <div class="rightbox col-xs-3">
+                                                  <div class="img1 shonav">
+                                                    <div class="show">
+                                                      <p id="board">Board4</p>
+                                                      <img id="teampics" src="samplepic.jpg" >
+                                                      <h1 id="initials">BM4</h1>
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                                <div class="row">
+                                                  <div class="space1 col-xs-12"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col1 col-xs-1"></div>
+                                                  <div class="leftbox col-xs-3">
+                                                              <div class="img1 show1">
+                                                                <div class="show">
+                                                                  <p id="board">Board2</p>
+                                                                  <img id="teampics" src="samplepic.jpg" >
+                                                                  <h1 id="initials">BM2</h1>
+                                                                </div></div></div>
+                                                    <div class="centrebox col-xs-3">
+                                                              <div class="img1">
+                                                                <div class="show">
+                                                                  <p id="board">Board3</p>
+                                                                  <img id="teampics" src="samplepic.jpg" >
+                                                                  <h1 id="initials">BM3</h1>
+                                                                </div></div></div>
+                                                                <div class="rightbox col-xs-3">
+                                                                            <div class="img1 shonav">
+                                                                              <div class="show">
+                                                                                <p id="board">Board4</p>
+                                                                                <img id="teampics" src="samplepic.jpg" >
+                                                                                <h1 id="initials">BM4</h1>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div></div>
+                                                                              <div class="row">
+                                                                                <div class="space1 col-xs-12"></div>
+                                                                              </div>
+                                                                                  <div class="row">
+
+                                                                                      <div class="col-xs-1"></div>
+
+                                                                                              <div class="leftbox col-xs-5">
+
+                                                                                                <div class="img1 show1">
+                                                                                                  <div class="show">
+                                                                                                    <p id="board">Board8</p>
+                                                                                                    <img id="teampics" src="samplepic.jpg" >
+                                                                                                    <h1 id="initials">BM8</h1>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+
+                                                                                            <div class="rightbox col-xs-5">
+
+                                                                                                        <div class="img1 shonav">
+                                                                                                          <div class="show">
+                                                                                                            <p id="board">Board9</p>
+                                                                                                            <img id="teampics" src="samplepic.jpg" >
+                                                                                                            <h1 id="initials">BM9</h1>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div></div>
+
+
+                  </div>
+                  </div>
+
+
+
+                <div class="row">
+                  <div id="TeamText">
+                  <h1 id="head"> [ TEXT HERE ]</h1>
+                </div>
+                </div>
+              </div>
+            </section>
+            <section id="Contactuspage">
+                <div id="ContactUs">
+                  <div class="row">
+                    <div id="ContactText"><br><h1 id="head">CONTACT US</h1>
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <h2>Links</h2>
+                        </div>
+                        <div class="col-xs-3"><h2>Contacts</h2></div>
+                        <div class="col-xs-3"><h2>Privacy</h2></div>
+                        <div class="col-xs-2"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </section>
+
           </div>
 
 
-
+          </div>
+        </div></div>
 
 
  </body>
