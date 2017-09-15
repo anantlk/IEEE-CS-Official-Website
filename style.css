@@ -119,6 +119,20 @@ color: white;
   animation-duration:0.9s;
   animation-timing-function:ease-out;
 }
+@media only screen and (min-width:770px) and (max-width:1022px)
+{
+  #menu-contact
+{
+  margin-right:20px;
+}
+@media only screen and (min-width:1024px) and (max-width:1191px)
+{
+#menu-contact
+{
+  margin-right:30px;
+}
+}
+}
 @media(min-width:770px){
 .m_navbar{display:none;}
 .navbar{
@@ -164,10 +178,6 @@ text-align: center;
   background-image: url('BG.png');
   height: 100vh;
   background-size: contain;
-}
-#menu-contact
-{
-  margin-right:20px;
 }
 #h_text{
 margin-top: 40vh;
@@ -600,12 +610,12 @@ text-align: center;
 color: white;
   font-size: 30px;
 }
-@media only screen and (min-width:769px) and (max-width:1191px)
+@media only screen and (min-width:1024px) and (max-width:1191px)
 {
-  #menu-contact
-  {
-    margin-right:50px;
-  }
+#menu-contact
+{
+  margin-right:30px;
+}
 }
 @media only screen and (min-width:769px) and (max-width:1200px)
 {
