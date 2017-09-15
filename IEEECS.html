@@ -390,13 +390,24 @@
       $("#menu-events").removeClass("active");
     }
     //team page
-    if(win_top>=x3-5 && win_top<x4-5)
+    if(win_top>=x3-5 && win_top!==($(document).height()-$(window).height()))
     {
       $("#menu-team").addClass("active");
     }
     else
     {
       $("#menu-team").removeClass("active");
+    }
+
+    //contact page
+
+    if(win_top===($(document).height()-$(window).height()))
+    {
+      $("#menu-contact").addClass("active");
+    }
+    else
+    {
+      $("#menu-contact").removeClass("active");
     }
     //navbar-show
     if(win_top>=x1-5)
