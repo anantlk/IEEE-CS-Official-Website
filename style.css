@@ -200,6 +200,7 @@ font-weight: bold;
 .col1{
   margin-left:65px;
 }
+.col2{margin-left:-65px;}
 .leftbox{
 display:flex;
 justify-content: flex-end;
@@ -306,6 +307,9 @@ h2{
   .col1{
     margin-left:30px;
   }
+  .col2{
+    margin-left:-30px;
+  }
   #Team{height:200vh;}
 }
 #icon{
@@ -381,6 +385,7 @@ margin-left: 30px;
     .col1{
       margin-left:18px;
     }
+    .col2{margin-left: -18px;}
     #Team{height:150vh;}
 #head{font-size: 20px;}
 .contact2{
@@ -469,6 +474,7 @@ margin-left: 10px;
   }
 h2{font-size: 18px;}
 #ContactText{
+  padding-top:5vh;
   font-size: 11px;
 }
 
