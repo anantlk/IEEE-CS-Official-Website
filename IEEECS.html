@@ -3,22 +3,16 @@
  <head>
    <title>IEEE-CS</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="events-style.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../lib/jquery.simplr.smoothscroll.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="C:\Users\Anant Kakrania\Documents\anant progrAMS\anantProj\smooth scroll plugin\smoothscroll.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <script type="text/javascript" charset="utf-8">
-    $(function () {
-      $.srSmoothscroll()
-    })
-  </script>
- </head>
+   </head>
  <body>
+   <div id="overlay" onclick="closeNav()"></div>
         <div class="container-fluid">
           <div class="row">
             <div class="navbar">
@@ -40,21 +34,21 @@
                 </div>
               </div>
             </div>
-            <div class="nav-sidebar sidenav" style="width:200px;right:0;" id="mySidebar">
-
-              <a href="#homepage"><div class="navtext" onclick="nav_close()"><p class="nav-text">HOME</p></div></a>
-              <a href="#Aboutpage"><div class="navtext" onclick="nav_close()"><p class="nav-text"  >ABOUT</p></div></a>
-              <a href="#"><div class="navtext" onclick="nav_close()"><p class="nav-text" >EVENTS</p></div></a>
-              <a href="#Teampage"><div class="navtext" onclick="nav_close()"><p class="nav-text" >TEAM</p></div></a>
-              <a href="#Contactuspage"><div class="navtext" onclick="nav_close()"><p classs="nav-text" >CONTACT US</p></div></a>
-            </div>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#homepage" class="smoothScroll" onclick="closeNav()">HOME</a>
+                  <a href="#Aboutpage"  class="smoothScroll" onclick="closeNav()">ABOUT</a>
+                  <a href="#Eventspage" class="smoothScrolll" onclick="closeNav()">EVENTS</a>
+                  <a href="#Teampage" class="smoothScroll" onclick="closeNav()">TEAM</a>
+                  <a href="#Contactuspage" class="smoothScroll" onclick="closeNav()">CONTACT US</a>
+                </div>
               <div class="m_navbar">
                 <div class="row">
 
 
                   <div class="col-xs-1">
                     <div class="row">
-                          <span style="font-size:30px;cursor:pointer" onclick="nav_open()">&#9776;</span>
+                          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                     </div></div>  <div class="col-sm-8 col-xs-6"></div>  <div class="logodiv col-xs-2">
                           <img id="logo" src="logo.png">
                       </div>
@@ -423,5 +417,24 @@
     });
   }
 });
+
+  function openNav() {
+    console.log("Hi i am opening");
+  var w=screen.width;
+  if(w>1100){document.getElementById("mySidenav").style.width = "20%";}
+  else if(w<=1100 && w>900){document.getElementById("mySidenav").style.width="25%"}
+  else if(w<=900 && w>=768){document.getElementById("mySidenav").style.width="28%"}
+  else{
+    console.log("mobile");
+    document.getElementById("mySidenav").style.width="40%";}
+    //document.getElementById("overlay").style.display="block";
+   // document.body.style.overflowY="hidden";
+}
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+   // document.getElementById("overlay").style.display="none";
+    //document.body.style.overflowY="scroll";
+}
  </script>
  </html>
