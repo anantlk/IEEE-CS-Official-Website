@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="events-style.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/jquery.simplr.smoothscroll.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="C:\Users\Anant Kakrania\Documents\anant progrAMS\anantProj\smooth scroll plugin\smoothscroll.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script type="text/javascript" charset="utf-8">
+    $(function () {
+      $.srSmoothscroll()
+    })
+  </script>
  </head>
  <body>
         <div class="container-fluid">
@@ -22,11 +30,11 @@
                 <div class="pages col-lg-6 col-md-7 col-sm-9">
                   <div class="row">
                     <div id="pages" class="col-sm-12">
-                    <a href="#homepage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-home">HOME</p></div></a>
-                    <a href="#Aboutpage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
-                    <a href="#Eventspage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
-                    <a href="#Teampage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
-                    <a href="#Contactuspage"><div class="navtext c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
+                    <a href="#homepage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-home">HOME</p></div></a>
+                    <a href="#Aboutpage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
+                    <a href="#Eventspage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
+                    <a href="#Teampage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
+                    <a href="#Contactuspage" class="smoothScroll"><div class="navtext c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
@@ -57,8 +65,8 @@
               <div class="row">
                 <div class="row">
               <div id="h_text">
-              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br>
-                <p id="down-arrow"><a href="#Aboutpage"><img id="downi" src="arrow.png"></a></p></div></div>
+              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br><br>
+                <p id="down-arrow"><a href="#Aboutpage" class="smoothScroll"><img id="downi" src="arrow.png"></a></p></div></div>
               </div>
             </div>
             </section>
@@ -73,68 +81,71 @@
                   </div>
               </div>
             </section>
-            <section id="Eventspage">
-            <div class="timeline">
-                          <div class="entry">
-                  <div class="title">
-                    <h3>2014 - Present</h3>
-                    <p>Title, Company</p>
-                  </div>
-                  <div class="body">
-                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-                    <ul>
-                      <li>Rerum sit libero possimus amet excepturi</li>
-                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="entry">
-                  <div class="title">
-                    <h3>2010 - Present</h3>
-                    <p>Title, Company</p>
-                  </div>
-                  <div class="body">
-                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-                    <ul>
-                      <li>Rerum sit libero possimus amet excepturi</li>
-                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="entry">
-                  <div class="title">
-                    <h3>2009 - 2010</h3>
-                    <p>Title, Company</p>
-                  </div>
-                  <div class="body">
-                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-                    <ul>
-                      <li>Rerum sit libero possimus amet excepturi</li>
-                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="entry">
-                  <div class="title">
-                    <h3>2006 - 2008</h3>
-                    <p>Title, Company</p>
-                  </div>
-                  <div class="body">
-                    <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-                    <ul>
-                      <li>Rerum sit libero possimus amet excepturi</li>
-                      <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-                      <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-                    </ul>
-                  </div>
-                </div>
 
-              </div>
+          <section id="Eventspage">
+          <div class="timeline-sec">
+          <div class="timeline">
+  <div class="entry">
+    <div class="title">
+      <h3>2014 - Present</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2010 - Present</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2009 - 2010</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2006 - 2008</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
 
-            </section>
+</div>
+</div>
+          </section>
+
             <section id="Teampage">
               <div id="Team">
                 <div class="row">
@@ -228,7 +239,7 @@
                                                                                                   </div>
                                                                                                 </div>
                                                                                               </div>
-                                                                                                <div class="col-xs-1"></div>
+
                                                                                             <div class="rightbox col-xs-5">
 
                                                                                                         <div class="img1 shonav">
@@ -299,6 +310,7 @@
       $("#menu-team").removeClass("active");
       $("#menu-contact").removeClass("active");
       $("#menu-about").removeClass("active").addClass("active");
+      $(window).scroll().preventDefault();
     });
 
    //events page
@@ -308,7 +320,8 @@
     $("#menu-home").removeClass("active");
     $("#menu-team").removeClass("active");
     $("#menu-contact").removeClass("active");
-    $("#menu-events").removeClass("active").addClass("active");
+     $("#menu-events").removeClass("active").addClass("active");
+     $(window).scroll().preventDefault();
     });
 
    //team page
@@ -318,7 +331,8 @@
     $("#menu-home").removeClass("active");
     $("#menu-events").removeClass("active");
     $("#menu-contact").removeClass("active");
-    $("#menu-team").removeClass("active").addClass("active");
+     $("#menu-team").removeClass("active").addClass("active");
+    $(window).scroll().preventDefault();
   });
 
     //contact page
@@ -327,11 +341,12 @@
     $("#menu-home").removeClass("active");
     $("#menu-events").removeClass("active");
     $("#menu-team").removeClass("active");
-    $("#menu-contact").removeClass("active").addClass("active");
+     $("#menu-contact").removeClass("active").addClass("active");
+     $(window).scroll().preventDefault();
   });
 
     var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-    if(w<=769)
+    if(w<=768)
     {
         var h=$(".m_navbar").height();
      $(window).on("scroll",function(){
@@ -345,12 +360,11 @@
     else
     {
         $(".m_navbar").css("display","none");
-        $(".sidenav").css("display","none");
     }
     });
    }
     else
-    {
+    { 
     var h=$(".navbar").height();
     $(window).on("scroll",function(){
     var win_top=$(window).scrollTop();
@@ -397,12 +411,5 @@
     });
   }
 });
-function nav_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function nav_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-
  </script>
  </html>

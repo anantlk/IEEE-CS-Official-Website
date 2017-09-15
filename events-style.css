@@ -1,10 +1,17 @@
 .timeline {
   width: 100%;
   max-width:800px;
-  background: #fff;
+  background:#efefef;
   padding: 100px 50px;
   position: relative;
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline-sec
+{
+  width:100%;
+  background-color: #4ba1ae;
+  padding:7% 18%;
+
 }
 .timeline:before {
   content: '';
@@ -44,14 +51,17 @@
   border-radius: 100%;
   top: 15%;
   right: -8px;
-  z-index: 99;
+  z-index: 0;
 }
 .entry .title h3 {
   margin: 0;
+  font-weight:bold;
+  color:black;
   font-size: 120%;
 }
 .entry .title p {
   margin: 0;
+  color:black;
   font-size: 100%;
 }
 .entry .body {
@@ -61,6 +71,7 @@
   padding-left: 30px;
 }
 .entry .body p {
+  color:black;
   line-height: 1.4em;
 }
 .entry .body p:first-child {
@@ -68,7 +79,7 @@
   font-weight: 400;
 }
 .entry .body ul {
-  color: #aaa;
+  color:black;
   padding-left: 0;
   list-style-type: none;
 }
@@ -82,4 +93,18 @@
   {
     width:100%;
   }
+  .timeline-sec
+  {
+    padding:50px 10px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1024px)
+{
+ .timeline-sec
+{
+  width:100%;
+  background-color: #4ba1ae;
+  padding:7% 10%;
+
+} 
 }
