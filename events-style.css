@@ -9,8 +9,8 @@
 .timeline-sec
 {
   width:100%;
-  background-color: #4ba1ae;
-  padding:7% 18%;
+  background-color: transparent;
+  padding:7% 20%;
 
 }
 .timeline:before {
@@ -50,7 +50,7 @@
   background-color: #fff;
   border-radius: 100%;
   top: 15%;
-  right: -8px;
+  right: -4px;
   z-index: 0;
 }
 .entry .title h3 {
