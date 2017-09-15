@@ -16,7 +16,10 @@ background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, F
 
 
 }
-
+#contact-mail
+{
+  padding-left:6%;
+}
 [class*="col-sm-"],[class*="col-md-"],[class*="col-xs-"],[class="*col-lg-"]
 {
   padding:0px;
@@ -237,7 +240,7 @@ font-weight: bold;
 }
 #ContactText{
   margin-left: 90px;
-  text-align: justify;
+  text-align: center;
   padding-top:3vh;
   width:80%;
   color:white;
@@ -401,7 +404,7 @@ h2{
 }
   #ContactText{
     margin-left: 90px;
-    text-align: justify;
+    text-align:center;
     padding-top:0vh;
     width:80%;
     color:white;
@@ -477,14 +480,24 @@ margin-left: 30px;
       color:white;
       font-size:12px;
     }
-    #TeamText,#ContactText{
+    #ContactText{
       margin-left: 90px;
-      text-align: justify;
+      text-align:center ;
       padding-top:20vh;
       width:80%;
       color:white;
       font-size:12px;
     }
+    #TeamText
+    {
+      margin-left: 90px;
+      text-align:justify ;
+      padding-top:20vh;
+      width:80%;
+      color:white;
+      font-size:12px;
+    }
+
     .show{
       height: 100px;
       width: 100px;
@@ -568,9 +581,17 @@ margin-left: 10px;
   font-weight: bold;
   }
 
-  #TeamText,#ContactText{
+  #TeamText{
     margin-left: 20px;
     text-align: justify;
+    padding-top:20vh;
+    width:80%;
+    color:white;
+    font-size:12px;
+  }
+  #ContactText{
+    margin-left: 20px;
+    text-align:center;
     padding-top:20vh;
     width:80%;
     color:white;
