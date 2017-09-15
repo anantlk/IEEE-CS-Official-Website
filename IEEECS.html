@@ -4,7 +4,7 @@
    <title>IEEE-CS</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="discription" content="The official website of IEEE Computer Society, VIT University Vellore">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="events-style.css"/>
@@ -82,6 +82,7 @@
 
           <section id="Eventspage">
           <div class="timeline-sec">
+           <div id="TeamText"><br><p id="head" class="events-head">EVENTS</p></div>
           <div class="timeline">
   <div class="entry">
     <div class="title">
@@ -433,16 +434,15 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     }
     });
   }
+
 });
 
   function openNav() {
-    console.log("Hi i am opening");
   var w=screen.width;
   if(w>1100){document.getElementById("mySidenav").style.width = "20%";}
   else if(w<=1100 && w>900){document.getElementById("mySidenav").style.width="25%"}
   else if(w<=900 && w>=768){document.getElementById("mySidenav").style.width="28%"}
   else{
-    console.log("mobile");
     document.getElementById("mySidenav").style.width="40%";}
     //document.getElementById("overlay").style.display="block";
    // document.body.style.overflowY="hidden";
