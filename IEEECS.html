@@ -57,7 +57,7 @@
               <div class="row">
                 <div class="row">
               <div id="h_text">
-              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br><br>
+              <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br>
                 <p id="down-arrow"><a href="#Aboutpage"><img id="downi" src="arrow.png"></a></p></div></div>
               </div>
             </div>
@@ -228,7 +228,7 @@
                                                                                                   </div>
                                                                                                 </div>
                                                                                               </div>
-
+                                                                                                <div class="col-xs-1"></div>
                                                                                             <div class="rightbox col-xs-5">
 
                                                                                                         <div class="img1 shonav">
@@ -260,15 +260,20 @@
                       <div class="row">
                         <div class="col-xs-3">
                           <h2>Links</h2><p>Arcs<br>Mozilla<br></p>
-                          <div id="icon">
-                          <img id="icon1" src="icon1.png"><img id="icon2" src="icon2.png"><img id="icon3" src="locationicon.png">
-                        </div></div>
+                          </div>
+                          <div class="col-xs-1"></div>
                         <div class="col-xs-3"><h2>Contacts</h2><p>ieeecs@vit.ac.in</p></div>
+                        <div class="col-xs-2"></div>
                         <div class="col-xs-3"><h2>Privacy</h2><p>Privacy Policy</p></div>
-                        <div class="col-xs-3"></div>
+
+
 
                       </div>
-                        <div id="foot"><br><p>© 2017 IEEE - Computer Society </p></div>
+                      <div class="row">
+                        <div id="icon">
+                        <img id="icon1" src="icon1.png"><img id="icon2" src="icon2.png"><img id="icon3" src="locationicon.png">
+                      </div>
+                        <div id="foot"><br><p>© 2017 IEEE - Computer Society </p></div></div>
                     </div>
                   </div>
 
@@ -326,7 +331,7 @@
   });
 
     var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-    if(w<=768)
+    if(w<=769)
     {
         var h=$(".m_navbar").height();
      $(window).on("scroll",function(){
@@ -340,11 +345,12 @@
     else
     {
         $(".m_navbar").css("display","none");
+        $(".sidenav").css("display","none");
     }
     });
    }
     else
-    { 
+    {
     var h=$(".navbar").height();
     $(window).on("scroll",function(){
     var win_top=$(window).scrollTop();
@@ -391,5 +397,12 @@
     });
   }
 });
+function nav_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function nav_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
  </script>
  </html>

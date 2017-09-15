@@ -56,7 +56,7 @@ color: white;
   animation-duration:0.9s;
   animation-timing-function:ease-out;
 }
-@media(min-width:769px){
+@media(min-width:770px){
 .m_navbar{display:none;}
 .sidenav{display:none;}
 .navbar{
@@ -71,9 +71,9 @@ z-index:1;
 padding-right: 0;
 animation-duration:0.1s;
 }
-.nav-text{ 
+.nav-text{
  border-top:4px solid transparent;
- color:grey; 
+ color:grey;
   padding-top:20px;
   margin-left:12px;
   margin-right:12px;
@@ -130,7 +130,7 @@ color: white;
   background-color: #4ba1ae;
 
 }
-#ContactUs{height:50vh;background-color:grey;}
+#ContactUs{height:70vh;background-color:grey;}
   #Team{height:250vh;}
 #head{
 font-size: 40px;
@@ -212,7 +212,7 @@ justify-content: flex-end;
   display: flex;
   justify-content: flex-start;
 }
-@media(max-width:768px){
+@media(max-width:769px){
   .navbar{display:none;}
   .m_navbar{
     display:none;
@@ -253,12 +253,24 @@ justify-content: flex-end;
       transition: 0.3s;
   }
 
-  #hometext{font-size: 20px;}
+  #hometext{font-size: 15px;}
   #AboutText{
     margin-left: 70px;
     height:80vh;
     text-align: justify;
     padding-top:25vh;
+    width:80%;
+    color:white;
+    font-size:15px;
+  }
+#head{font-size: 30px;}
+h2{
+  font-size:20px;
+}
+  #ContactText{
+    margin-left: 90px;
+    text-align: justify;
+    padding-top:0vh;
     width:80%;
     color:white;
     font-size:15px;
@@ -367,7 +379,7 @@ margin-left: 30px;
       height:15px;
     }
     .col1{
-      margin-left:20px;
+      margin-left:18px;
     }
     #Team{height:150vh;}
 #head{font-size: 20px;}
@@ -395,7 +407,7 @@ padding-top: 10px;
 margin-left: 10px;
 }
   }
-@media(max-width:400px){
+@media(max-width:450px){
   #hometext{
 
   text-align: center;
@@ -415,9 +427,6 @@ margin-left: 10px;
     display: flex;
     justify-content: flex-start;
   }
-
-}
-@media(max-width:374px){
   #head{
   font-size: 20px;
   font-weight: bold;
@@ -458,10 +467,40 @@ margin-left: 10px;
     width:100%;
     height:15px;
   }
-  .col1{
-    margin-left:0px;
-  }
+h2{font-size: 18px;}
+#ContactText{
+  font-size: 11px;
+}
 
+}
+@media(max-width:350px)
+{  .show{
+    height: 70px;
+    width: 70px;
+  }
+  #teampics{
+    height: 70px;
+    width: 70px;
+  }
+  #board{
+    padding: 2px;
+    font-size: 10px;
+
+    position: relative;
+    text-align: left;
+    top: 25px;
+  }
+  #initials{
+    font-size: 10px;
+    font-weight: normal;
+    position: relative;
+    text-align: right;
+    bottom: 30px;
+  }
+  h2{font-size:13px;font-weight: bold;}
+  #ContactText{
+    font-size: 10px;
+  }
 }
 @media only screen and (min-width:769px) and (max-width:1191px)
 {
