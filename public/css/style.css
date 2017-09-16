@@ -9,6 +9,13 @@ margin:0px;
 font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
+.nav-contact
+{
+ border-top:4px solid transparent;
+ color:grey;
+  padding-top:20px;
+  margin-left:12px;
+}
 .top-bar
 {
 padding-right:18px !important;
