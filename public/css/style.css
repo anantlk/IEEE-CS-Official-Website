@@ -14,7 +14,7 @@ overflow-x:hidden;
   {
     background-image: none !important;
   background-color:black !important;
-  height:100vh;
+  min-height:550px;
   }
 }
 .nav-contact
@@ -622,7 +622,7 @@ margin-left: 10px;
 
   text-align: center;
   color: white;
-    font-size: 14px;
+    font-size: 14px !important;
   }
   #AboutText{
     margin-left: 20px;
