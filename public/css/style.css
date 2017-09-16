@@ -10,7 +10,13 @@ font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
 
-
+@media only screen and (max-width:767px)
+{
+#Team-content h2
+{
+font-size:20px;
+}
+}
 #Team-content
 {margin-top:25%;
  margin-left:10%;
