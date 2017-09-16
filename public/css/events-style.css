@@ -44,12 +44,12 @@
   margin: 0;
   font-weight:bold;
   color:black;
-  font-size:120%;
+  font-size:140%;
 }
 .entry .title p {
   margin: 0;
   color:black;
-  font-size: 100%;
+  font-size: 110%;
 }
 .entry .body {
   margin: 0 0 3em;
@@ -60,6 +60,7 @@
 .entry .body p {
   color:black;
   line-height: 1.4em;
+  font-size:30px;
 }
 .entry .body p:first-child {
   margin-top: 0;
@@ -88,6 +89,10 @@ right:-13px;
 {
 padding:50px 10px;
 }
+.entry .body
+{
+font-size:20px;
+}
 }
 @media only screen and (min-width:768px) and (max-width:1024px)
 {
@@ -97,5 +102,9 @@ padding:50px 10px;
   background-color:transparent;
   padding:7% 11%;
 
+}
+.entry .body p
+{
+font-size:25px;
 } 
 }
