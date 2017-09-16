@@ -9,6 +9,12 @@ margin:0px;
 font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
+
+
+#Team-content
+{margin-top:25%;
+ margin-left:10%;
+}
 .link a
 {
   text-decoration: none;
