@@ -9,6 +9,12 @@ margin:0px;
 font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
+@media only screen and (max-width:1300px)
+{#home
+  {
+  background-color:black;
+  }
+}
 .nav-contact
 {
  border-top:4px solid transparent;
