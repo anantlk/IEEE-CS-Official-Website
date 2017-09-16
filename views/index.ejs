@@ -411,7 +411,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
       $("#menu-events").removeClass("active");
     }
     //team page
-    if(win_top>=x3-5 && win_top<($(document).height()-$(window).height())-3)
+    if(win_top>=x3-5 && win_top<($(document).height()-$(window).height())-20)
     {
       $("#menu-team").addClass("active");
     }
@@ -423,7 +423,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     //contact page
     console.log(win_top);
     console.log($(document).height()-$(window).height());
-    if( win_top>=($(document).height()-$(window).height())-3 && win_top<=($(document).height()-$(window).height())+3)
+    if( win_top>=($(document).height()-$(window).height())-20)
     {
       $("#menu-contact").addClass("active");
     }
