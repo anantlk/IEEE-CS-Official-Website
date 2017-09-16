@@ -16,7 +16,10 @@ body
 .bs-example{
 	margin: 20px;
 }
-
+#team
+{
+padding:10%;
+}
 #Teampage img
 {
 	width:100%;
@@ -66,22 +69,41 @@ position:relative;
 {
 	display:block;
 }
-@media only screen and (max-width:1100px)
+@media only screen and (max-width:767px)
 {
 .mobile
 {
-	display:block;
+  display:block;
 }
 .team-pc
 {
-	display:none;
+  display:none;
 }
 .post
 {
-	font-size:40px;
+  font-size:20px;
 }
 .member-name
 {
-	font-size:35px;
+  font-size:15px;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1100px)
+{
+.mobile
+{
+  display:block;
+}
+.team-pc
+{
+  display:none;
+}
+.post
+{
+  font-size:40px;
+}
+.member-name
+{
+  font-size:35px;
 }
 }
