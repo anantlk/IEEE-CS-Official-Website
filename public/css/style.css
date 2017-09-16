@@ -14,6 +14,7 @@ overflow-x:hidden;
   {
     background-image: none !important;
   background-color:black !important;
+  height:100vh;
   }
 }
 .nav-contact
