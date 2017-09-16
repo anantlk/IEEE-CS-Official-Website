@@ -9,7 +9,10 @@ margin:0px;
 font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
-
+.top-bar
+{
+padding-right:30px;
+}
 @media only screen and (max-width:767px)
 {
 #Team-content h2

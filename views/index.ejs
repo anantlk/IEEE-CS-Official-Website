@@ -38,7 +38,7 @@
                     <a href="#Aboutpage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
                     <a href="#Eventspage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
                     <a href="#Teampage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
-                    <a href="#Contactuspage" class="smoothScroll"><div class="navtext c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
+                    <a href="#Contactuspage" class="smoothScroll"><div class="top-bar c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
@@ -411,7 +411,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
       $("#menu-events").removeClass("active");
     }
     //team page
-    if(win_top>=x3-5 && win_top!==($(document).height()-$(window).height()))
+    if(win_top>=x3-5 && win_top>=($(document).height()-$(window).height())-3 && win_top<=($(document).height()-$(window).height())+3)
     {
       $("#menu-team").addClass("active");
     }
@@ -422,7 +422,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
 
     //contact page
 
-    if(win_top===($(document).height()-$(window).height()))
+    if( win_top>=($(document).height()-$(window).height())-3 && win_top<=($(document).height()-$(window).height())+3)
     {
       $("#menu-contact").addClass("active");
     }
