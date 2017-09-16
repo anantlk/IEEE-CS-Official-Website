@@ -82,24 +82,21 @@
     width:100%;
     padding:80px 10px;
   }
-.entry .title:before{
-right:-13px;
-}
 .timeline-sec
 {
 padding:50px 10px;
 }
 .entry .title h3
 {
-font-size:22px;
+font-size:16px;
 }
 .entry .title p
 {
-font-size:19px;
+font-size:14px;
 }
 .entry .body p
 {
-font-size:17px;
+font-size:11px;
 }
 }
 @media only screen and (min-width:768px) and (max-width:1024px)
