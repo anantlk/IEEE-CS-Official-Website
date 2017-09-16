@@ -31,7 +31,7 @@
   text-align: left;
   position: relative;
 }
--.entry .title {
+.entry .title {
   margin-bottom: .5em;
   float: left;
   width: 33%;
@@ -44,7 +44,7 @@
   margin: 0;
   font-weight:bold;
   color:black;
-  font-size: 120%;
+  font-size:120%;
 }
 .entry .title p {
   margin: 0;
