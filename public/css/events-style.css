@@ -1,6 +1,6 @@
 ﻿.timeline {
   background:#efefef;
-  padding: 100px 50px;
+  padding: 100px 20px;
   position: relative;
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -89,6 +89,14 @@ right:-13px;
 {
 padding:50px 10px;
 }
+.entry .title h3
+{
+font-size:22px;
+}
+.entry .title p
+{
+font-size:19px;
+}
 .entry .body p
 {
 font-size:17px;
@@ -102,6 +110,14 @@ font-size:17px;
   background-color:transparent;
   padding:7% 11%;
 
+}
+.entry .title h3
+{
+font-size:25px;
+}
+.entry .title p
+{
+font-size:22px;
 }
 .entry .body p
 {
