@@ -494,10 +494,6 @@ width: 45px;
 padding-top: 10px;
 margin-left: 30px;
 }
-#Team
-{
-height:100vh !important;
-}
 @media(max-width:600px){
   #overlay{
     display: block;
