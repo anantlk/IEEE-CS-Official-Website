@@ -2,7 +2,7 @@
   width: 100%;
   max-width:800px;
   background:#efefef;
-  padding: 100px 50px;
+  padding: 100px 30px;
   position: relative;
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -50,7 +50,7 @@
   background-color: #fff;
   border-radius: 100%;
   top: 15%;
-  right: -4px;
+  right: -6px;
   z-index: 0;
 }
 .entry .title h3 {
