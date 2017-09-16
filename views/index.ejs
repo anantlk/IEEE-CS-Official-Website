@@ -92,9 +92,10 @@
             </section>
 
           <section id="Eventspage">
-          <div class="timeline-sec">
+          <div class="timeline-sec row">
            <div id="TeamText"><br><p id="head" class="events-head">EVENTS</p></div>
-          <div class="timeline">
+           <div class="col-sm-2 col-lg-2 col-md-2 col-xs-1"></div>
+          <div class="timeline col-sm-8 col-lg-8 col-md-8 col-xs-10">
   <div class="entry">
     <div class="title">
       <h3>Riviera '17</h3>
@@ -374,6 +375,9 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
       $("#menu-team").removeClass("active");
       $("#menu-contact").removeClass("active");
       $("#menu-about").removeClass("active").addClass("active");
+      $(window).on("scroll",function(event){
+      event.preventDefault();
+     });
     });
 
    //events page
@@ -385,7 +389,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     $("#menu-contact").removeClass("active");
      $("#menu-events").removeClass("active").addClass("active");
      $(window).on("scroll",function(event){
-      event.preventDeault();
+      event.preventDefault();
      });
     });
 
@@ -398,7 +402,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     $("#menu-contact").removeClass("active");
      $("#menu-team").removeClass("active").addClass("active");
       $(window).on("scroll",function(event){
-      event.preventDeault();
+      event.preventDefault();
      });
   });
 
@@ -410,7 +414,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     $("#menu-team").removeClass("active");
      $("#menu-contact").removeClass("active").addClass("active");
       $(window).on("scroll",function(event){
-      event.preventDeault();
+      event.preventDefault();
      });
   });
 

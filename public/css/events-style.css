@@ -1,6 +1,4 @@
 ﻿.timeline {
-  width: 100%;
-  max-width:800px;
   background:#efefef;
   padding: 100px 50px;
   position: relative;
@@ -86,10 +84,6 @@
 .entry .title:before{
 right:-13px;
 }
-  .timeline-sec
-  {
-    padding:50px 10px;
-  }
 }
 @media only screen and (min-width:768px) and (max-width:1024px)
 {
