@@ -1,4 +1,4 @@
-.timeline {
+﻿.timeline {
   width: 100%;
   max-width:800px;
   background:#efefef;
@@ -10,7 +10,7 @@
 {
   width:100%;
   background-color: transparent;
-  padding:7% 20%;
+  padding:7% 22%;
 
 }
 .timeline:before {
@@ -103,8 +103,8 @@
  .timeline-sec
 {
   width:100%;
-  background-color: #4ba1ae;
-  padding:7% 10%;
+  background-color:transparent;
+  padding:7% 11%;
 
 } 
 }
