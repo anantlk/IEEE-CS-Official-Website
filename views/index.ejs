@@ -445,9 +445,84 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     });
   }
   $(window).on("resize",function(){
-        var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-        var w=$(window).width();
-        var win_top=$(window).scrollTop();
+w=$(window).width();
+    var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+    if(w<=768)
+    {
+        var h=$(".m_navbar").height();
+     $(window).on("scroll",function(){
+    var win_top=$(window).scrollTop();
+    if(win_top>=x1-5)
+    {
+      //$(".m_navbar").css("height",h+'px');
+      $(".m_navbar").css("display","block");
+      $(".m_navbar").addClass("animated").addClass("slideInDown");
+    }
+    else
+    {
+        $(".m_navbar").css("display","none");
+    }
+    });
+   }
+    else
+    {
+    var h=$(".navbar").height();
+    $(window).on("scroll",function(){
+    var win_top=$(window).scrollTop();
+
+    //About page
+    if(win_top>=x1-5 && win_top<x2-5)
+    {
+      $("#menu-about").addClass("active");
+    }
+    else
+    {
+      $("#menu-about").removeClass("active");
+    }
+
+    //Events page
+    if(win_top>=x2-5 && win_top<x3-5)
+    {
+      $("#menu-events").addClass("active");
+    }
+    else
+    {
+      $("#menu-events").removeClass("active");
+    }
+    //team page
+    if(win_top>=x3-5 && win_top<($(document).height()-$(window).height())-20)
+    {
+      $("#menu-team").addClass("active");
+    }
+    else
+    {
+      $("#menu-team").removeClass("active");
+    }
+
+    //contact page
+    console.log(win_top);
+    console.log($(document).height()-$(window).height());
+    if( win_top>=($(document).height()-$(window).height())-20)
+    {
+      $("#menu-contact").addClass("active");
+    }
+    else
+    {
+      $("#menu-contact").removeClass("active");
+    }
+    //navbar-show
+    if(win_top>=x1-5)
+    {
+      $(".navbar").css("height",h+'px');
+      $(".navbar").css("display","block");
+      $(".navbar").addClass("animated").addClass("slideInDown");
+    }
+    else
+    {
+        $(".navbar").css("display","none");
+    }
+    });
+  }
   });
 });
 
