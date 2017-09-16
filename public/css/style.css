@@ -12,7 +12,7 @@ overflow-x:hidden;
 @media only screen and (max-width:1300px)
 {#home
   {
-  background-color:black;
+  background-color:black !important;
   }
 }
 .nav-contact
