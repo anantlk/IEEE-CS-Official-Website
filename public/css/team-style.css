@@ -12,9 +12,6 @@ body
 .carousel .item img{
   width:100%; /* Align slide image horizontally center */
 }
-.bs-example{
-	margin: 20px;
-}
 #team
 {
 padding:10%;
