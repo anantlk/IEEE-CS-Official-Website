@@ -421,7 +421,8 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     }
 
     //contact page
-
+    console.log(win_top);
+    console.log($(document).height()-$(window).height());
     if( win_top>=($(document).height()-$(window).height())-3 && win_top<=($(document).height()-$(window).height())+3)
     {
       $("#menu-contact").addClass("active");
