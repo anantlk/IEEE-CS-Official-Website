@@ -363,7 +363,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
 </div>
 
  </body>
- <script type="text/javascript">
+  <script type="text/javascript">
    $(document).ready(function(){
     w=$(window).width();
        //About Page
@@ -481,7 +481,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     }
     });
   }
-    $(window).on("resize",function(){
+  $(window).on("resize",function(){
         var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
         w=$(window).width();
   });
@@ -493,6 +493,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
   else if(w<=1100 && w>900){document.getElementById("mySidenav").style.width="25%"}
   else if(w<=900 && w>=768){document.getElementById("mySidenav").style.width="28%"}
   else{
+    console.log("mobile");
     document.getElementById("mySidenav").style.width="40%";}
     //document.getElementById("overlay").style.display="block";
    // document.body.style.overflowY="hidden";
