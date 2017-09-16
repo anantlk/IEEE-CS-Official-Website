@@ -496,7 +496,8 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
   }
   $(window).on("resize",function(){
         var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-        w=$(window).width();
+        var w=$(window).width();
+        var win_top=$(window).scrollTop();
   });
 });
 
