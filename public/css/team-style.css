@@ -1,0 +1,87 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+  width:100%; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+#Teampage img
+{
+	width:100%;
+}
+.row
+{
+	margin:0px;
+	padding:0px;
+}
+[class*="col-sm-"],[class*="col-md-"],[class*="col-lg-"],[class*="col-xs-"]
+{
+	padding:0px;
+	margin:0px;
+}
+.heading
+{
+position:relative;
+}
+.last-row
+{
+	margin-left:4%;
+}
+.post
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:17px;
+	color:white;
+	background-color: blue;
+	border:2px solid blue;
+}
+.member-name
+{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	color:white;
+	font-size:20px;
+	margin:0px;
+}
+.mobile
+{
+	display:none;
+}
+.team-pc
+{
+	display:block;
+}
+@media only screen and (max-width:1100px)
+{
+.mobile
+{
+	display:block;
+}
+.team-pc
+{
+	display:none;
+}
+.post
+{
+	font-size:40px;
+}
+.member-name
+{
+	font-size:35px;
+}
+}
