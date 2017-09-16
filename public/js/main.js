@@ -1,17 +1,14 @@
-jQuery(document).ready(function(event){
+
   var isAnimating = false,
     newLocation = '';
     firstLoad = false;
 
-  //trigger smooth transition from the actual page to the new one
-  $('main').on('click', '[data-type="page-transition"]', function(event){
-    event.preventDefault();
-    //detect which page has been selected
-    var newPage = $(this).attr('href');
-    //if the page is not already being animated - trigger animation
-    if( !isAnimating ) changePage(newPage, true);
-    firstLoad = true;
-  });
+    function start_animation(){
+      var newPage = "about.html"
+      //if the page is not already being animated - trigger animation
+      if( !isAnimating ) changePage(newPage, true);
+      firstLoad = true;
+    }
 
   //detect the 'popstate' event - e.g. user clicking the back button
   $(window).on('popstate', function() {
@@ -78,4 +75,3 @@ jQuery(document).ready(function(event){
   function transitionsSupported() {
     return $('html').hasClass('csstransitions');
   }
-});

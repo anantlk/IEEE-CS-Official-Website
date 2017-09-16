@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="/css/team-style.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/events-style.css"/>
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <script src="/js/modernizr.js"></script>
-    <!-- <script src="js/wow.min.js"></script> -->
-                  <!-- <script>
-              new WOW().init();
-              </script> -->
     <script src="/js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="/js/smoothscroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -28,8 +23,6 @@
    	<div class="cd-index cd-main-content">
    		<div>
    			<h1>What's the magic word?</h1>
-
-   			<a class="cd-btn" href="about.html" id="begin-btn"  style="display:none;" data-type="page-transition">Start animation</a>
    		</div>
    	</div>
    </main>
@@ -380,7 +373,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
   var timer = setInterval(function(){
     // console.log("Yo");
     if(answer.toLowerCase() == "please"){
-      $('#begin-btn').click();
+      start_animation();
     }
   }, 200)
 
