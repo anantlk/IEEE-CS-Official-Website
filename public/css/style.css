@@ -9,6 +9,57 @@ margin:0px;
 font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
+.navbar{
+  height: 68px!important;
+}
+/*#main-content{
+  width: 0!important;
+}*/
+@media only screen and (max-width:1300px)
+{#home
+  {
+    background-image: none !important;
+  background-color:black !important;
+  min-height:550px;
+  }
+}
+.nav-contact
+{
+ border-top:4px solid transparent;
+ color:grey;
+  padding-top:20px;
+  margin-left:12px;
+}
+.top-bar
+{
+padding-right:20px !important;
+}
+@media only screen (max-width:1250px)
+{
+.top-bar
+{
+padding-right:50px !important;
+}
+}
+@media only screen and (max-width:767px)
+{
+#Team-content h2
+{
+font-size:20px;
+}
+#Team-content p
+{
+  font-size:14px !important;
+}
+}
+#Team-content
+{margin-top:10%;
+ margin-left:10%;
+}
+#Team-content p
+{
+font-size:20px;
+}
 .link a
 {
   text-decoration: none;
@@ -163,13 +214,13 @@ color: white;
 {
   #menu-contact
 {
-  margin-right:20px;
+  padding-right:25px;
 }
 @media only screen and (min-width:1024px) and (max-width:1191px)
 {
 #menu-contact
 {
-  margin-right:30px;
+  padding-right:30px;
 }
 }
 }
@@ -256,12 +307,7 @@ font-weight: 600 !important;
   font-size:20px;
 }
 #TeamText{
-  margin-left: 90px;
-  text-align: justify;
-  padding-top:15vh;
-  width:80%;
-  color:white;
-  font-size:20px;
+  padding-top:8vh;
 }
 #ContactText{
   text-align: center;
@@ -520,12 +566,8 @@ margin-left: 30px;
     }
     #TeamText
     {
-      margin-left: 90px;
-      text-align:justify ;
-      padding-top:20vh;
-      width:80%;
-      color:white;
-      font-size:12px;
+      padding-top:12vh;
+
     }
 
     .show{
@@ -590,7 +632,7 @@ margin-left: 10px;
 
   text-align: center;
   color: white;
-    font-size: 14px;
+    font-size: 18px !important;
   }
   #AboutText{
     margin-left: 20px;
@@ -611,12 +653,8 @@ margin-left: 10px;
   }
 
   #TeamText{
-    margin-left: 20px;
-    text-align: justify;
-    padding-top:20vh;
-    width:80%;
+    padding-top:13vh;
     color:white;
-    font-size:12px;
   }
   #ContactText{
     margin-left: 20px;
@@ -698,13 +736,13 @@ h2{font-size: 18px;}
 
 text-align: center;
 color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 @media only screen and (min-width:1024px) and (max-width:1191px)
 {
 #menu-contact
 {
-  margin-right:30px;
+  padding-right:30px;
 }
 }
 @media only screen and (min-width:769px) and (max-width:1200px)
@@ -830,4 +868,8 @@ color: white;
   padding:7% 10%;
 
 }
+}
+#menu-contact
+{
+padding-right:30px;
 }

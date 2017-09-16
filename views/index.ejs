@@ -4,25 +4,38 @@
    <title>IEEE-CS</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="discription" content="The official website of IEEE Computer Society, VIT University Vellore">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-       <link rel="stylesheet" href="/css/team-style.css"/>
+   <link rel="stylesheet" href="css/flip.css">
+    <link rel="stylesheet" href="/css/team-style.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/events-style.css"/>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <script src="/js/modernizr.js"></script>
     <!-- <script src="js/wow.min.js"></script> -->
                   <!-- <script>
               new WOW().init();
               </script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="/js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="/js/smoothscroll.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="icon" href="/images/favicon.png"/>
    </head>
  <body>
+   <main id="main-reveal">
+   	<div class="cd-index cd-main-content">
+   		<div>
+   			<h1>What's the magic word?</h1>
+
+   			<a class="cd-btn" href="about.html" id="begin-btn"  style="display:none;" data-type="page-transition">Start animation</a>
+   		</div>
+   	</div>
+   </main>
    <div id="overlay" onclick="closeNav()"></div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="main-content">
           <div class="row">
           <div class="gradient">
             <div class="navbar">
@@ -38,7 +51,7 @@
                     <a href="#Aboutpage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
                     <a href="#Eventspage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
                     <a href="#Teampage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
-                    <a href="#Contactuspage" class="smoothScroll"><div class="navtext c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-text" id="menu-contact">CONTACT US</p></div></a>
+                    <a href="#Contactuspage" class="smoothScroll"><div class="top-bar c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-contact" id="menu-contact">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
@@ -83,7 +96,7 @@
 
             <section id="Aboutpage">
               <div id="About">
-                  <div id="AboutText"><br><p id="head">ABOUT US</p><br>
+                  <div id="AboutText" class="wow slideInDown"><br><p id="head">ABOUT US</p><br>
                     <p>IEEE-Computer Society is a student chapter in VIT University, Vellore. <br>Founded in 2012 by a group of tech enthusiasts, the chapter has been on an amazing journey ever since!
                       <br>Our chapter's mission is to foster innovation, learning and networking in the most happening areas of computing technologies and we have been doing so by conducting various workshops and events throughout the semester over the years.</p>
                       <p>Here, at IEEE-Computer Society, we believe that regardless of one's stream and interests, everyone can learn something from one another. We value a person's curiosity as much as we value knowledge. The exciting projects that our team members work on is sure to gratify the geek in you.
@@ -94,7 +107,7 @@
           <section id="Eventspage">
           <div class="timeline-sec row">
            <div id="TeamText"><br><p id="head" class="events-head">EVENTS</p></div>
-           <div class="col-sm-2 col-lg-2 col-md-2 col-xs-1"></div>
+           <div class="col-sm-1 col-lg-2 col-md-2 col-xs-1"></div>
           <div class="timeline col-sm-8 col-lg-8 col-md-8 col-xs-10">
   <div class="entry">
     <div class="title">
@@ -177,7 +190,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
             <section id="Teampage">
               <div id="Team" class="row">
                 <div class="row">
-                  <div id="TeamText"><br><p id="head">TEAM</p>
+                  <div id="Team-content"><br><h2 id="head">TEAM</h2>
                     <p>Our members are dedicated tech enthusiasts who bring energy, ideas and pride to their work.<br>
                       We work hard, but we don't take ourselves too seriously. We enjoy what we do and that's what keeps us going.</p>
                   </div>
@@ -197,7 +210,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
           <li data-target="#myCarousel" data-slide-to="6"></li>
           <li data-target="#myCarousel" data-slide-to="7"></li>
           <li data-target="#myCarousel" data-slide-to="8"></li>
-        </ol>   
+        </ol>
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
                 <div class="item heading active">
@@ -359,146 +372,178 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
 
 
           </div>
-        </div></div>
         </div>
-</div>
-
  </body>
   <script type="text/javascript">
-   $(document).ready(function(){
-    w=$(window).width();
-       //About Page
+  var answer = "";
+  $('#main-content').fadeOut(0);
+  var timer = setInterval(function(){
+    // console.log("Yo");
+    if(answer.toLowerCase() == "please"){
+      $('#begin-btn').click();
+    }
+  }, 200)
 
-   $("#menu-about").on("click",function(){
-      $("#menu-events").removeClass("active");
-      $("#menu-home").removeClass("active");
-      $("#menu-team").removeClass("active");
-      $("#menu-contact").removeClass("active");
-      $("#menu-about").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
+     function begin_scroll(){
+       w=$(window).width();
+       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+       if(w<=768)
+       {
+           var h=$(".m_navbar").height();
+        $(window).on("scroll",function(){
+       var win_top=$(window).scrollTop();
+       if(win_top>=x1-5)
+       {
+         //$(".m_navbar").css("height",h+'px');
+         $(".m_navbar").css("display","block");
+         $(".m_navbar").addClass("animated").addClass("slideInDown");
+       }
+       else
+       {
+           $(".m_navbar").css("display","none");
+       }
+       });
+      }
+       else
+       {
+       var h=$(".navbar").height();
+       $(window).on("scroll",function(){
+       var win_top=$(window).scrollTop();
+
+       //About page
+       if(win_top>=x1-5 && win_top<x2-5)
+       {
+         $("#menu-about").addClass("active");
+       }
+       else
+       {
+         $("#menu-about").removeClass("active");
+       }
+
+       //Events page
+       if(win_top>=x2-5 && win_top<x3-5)
+       {
+         $("#menu-events").addClass("active");
+       }
+       else
+       {
+         $("#menu-events").removeClass("active");
+       }
+       //team page
+       if(win_top>=x3-5 && win_top<($(document).height()-$(window).height())-20)
+       {
+         $("#menu-team").addClass("active");
+       }
+       else
+       {
+         $("#menu-team").removeClass("active");
+       }
+
+       //contact page
+       // console.log(win_top);
+       // console.log($(document).height()-$(window).height());
+       if( win_top>=($(document).height()-$(window).height())-20)
+       {
+         $("#menu-contact").addClass("active");
+       }
+       else
+       {
+         $("#menu-contact").removeClass("active");
+       }
+       //navbar-show
+       if(win_top>=x1-5)
+       {
+         $(".navbar").css("height",h+'px');
+         $(".navbar").css("display","block");
+         $(".navbar").addClass("animated").addClass("slideInDown");
+       }
+       else
+       {
+           $(".navbar").css("display","none");
+       }
+       });
+     }
+     $(window).on("resize",function(){
+   w=$(window).width();
+       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+       if(w<=768)
+       {
+           var h=$(".m_navbar").height();
+        $(window).on("scroll",function(){
+       var win_top=$(window).scrollTop();
+       if(win_top>=x1-5)
+       {
+         //$(".m_navbar").css("height",h+'px');
+         $(".m_navbar").css("display","block");
+         $(".m_navbar").addClass("animated").addClass("slideInDown");
+       }
+       else
+       {
+           $(".m_navbar").css("display","none");
+       }
+       });
+      }
+       else
+       {
+       var h=$(".navbar").height();
+       $(window).on("scroll",function(){
+       var win_top=$(window).scrollTop();
+
+       //About page
+       if(win_top>=x1-5 && win_top<x2-5)
+       {
+         $("#menu-about").addClass("active");
+       }
+       else
+       {
+         $("#menu-about").removeClass("active");
+       }
+
+       //Events page
+       if(win_top>=x2-5 && win_top<x3-5)
+       {
+         $("#menu-events").addClass("active");
+       }
+       else
+       {
+         $("#menu-events").removeClass("active");
+       }
+       //team page
+       if(win_top>=x3-5 && win_top<($(document).height()-$(window).height())-20)
+       {
+         $("#menu-team").addClass("active");
+       }
+       else
+       {
+         $("#menu-team").removeClass("active");
+       }
+
+       //contact page
+       // console.log(win_top);
+       // console.log($(document).height()-$(window).height());
+       if( win_top>=($(document).height()-$(window).height())-20)
+       {
+         $("#menu-contact").addClass("active");
+       }
+       else
+       {
+         $("#menu-contact").removeClass("active");
+       }
+       //navbar-show
+       if(win_top>=x1-5)
+       {
+         $(".navbar").css("height",h+'px');
+         $(".navbar").css("display","block");
+         $(".navbar").addClass("animated").addClass("slideInDown");
+       }
+       else
+       {
+           $(".navbar").css("display","none");
+       }
+       });
+     }
      });
-    });
-
-   //events page
-
-   $("#menu-events").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-team").removeClass("active");
-    $("#menu-contact").removeClass("active");
-     $("#menu-events").removeClass("active").addClass("active");
-     $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-    });
-
-   //team page
-
-    $("#menu-team").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-events").removeClass("active");
-    $("#menu-contact").removeClass("active");
-     $("#menu-team").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-  });
-
-    //contact page
-    $("#menu-contact").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-events").removeClass("active");
-    $("#menu-team").removeClass("active");
-     $("#menu-contact").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-  });
-
-    var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-    if(w<=768)
-    {
-        var h=$(".m_navbar").height();
-     $(window).on("scroll",function(){
-    var win_top=$(window).scrollTop();
-    if(win_top>=x1-5)
-    {
-      //$(".m_navbar").css("height",h+'px');
-      $(".m_navbar").css("display","block");
-      $(".m_navbar").addClass("animated").addClass("slideInDown");
-    }
-    else
-    {
-        $(".m_navbar").css("display","none");
-    }
-    });
-   }
-    else
-    {
-    var h=$(".navbar").height();
-    $(window).on("scroll",function(){
-    var win_top=$(window).scrollTop();
-
-    //About page
-    if(win_top>=x1-5 && win_top<x2-5)
-    {
-      $("#menu-about").addClass("active");
-    }
-    else
-    {
-      $("#menu-about").removeClass("active");
-    }
-
-    //Events page
-    if(win_top>=x2-5 && win_top<x3-5)
-    {
-      $("#menu-events").addClass("active");
-    }
-    else
-    {
-      $("#menu-events").removeClass("active");
-    }
-    //team page
-    if(win_top>=x3-5 && win_top!==($(document).height()-$(window).height()))
-    {
-      $("#menu-team").addClass("active");
-    }
-    else
-    {
-      $("#menu-team").removeClass("active");
-    }
-
-    //contact page
-
-    if(win_top===($(document).height()-$(window).height()))
-    {
-      $("#menu-contact").addClass("active");
-    }
-    else
-    {
-      $("#menu-contact").removeClass("active");
-    }
-    //navbar-show
-    if(win_top>=x1-5)
-    {
-      $(".navbar").css("height",h+'px');
-      $(".navbar").css("display","block");
-      $(".navbar").addClass("animated").addClass("slideInDown");
-    }
-    else
-    {
-        $(".navbar").css("display","none");
-    }
-    });
-  }
-  $(window).on("resize",function(){
-        var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
-        w=$(window).width();
-  });
-});
+     }
 
   function openNav() {
   var w=screen.width;
@@ -506,7 +551,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
   else if(w<=1100 && w>900){document.getElementById("mySidenav").style.width="25%"}
   else if(w<=900 && w>=768){document.getElementById("mySidenav").style.width="28%"}
   else{
-    console.log("mobile");
+    // console.log("mobile");
     document.getElementById("mySidenav").style.width="40%";}
     //document.getElementById("overlay").style.display="block";
    // document.body.style.overflowY="hidden";
