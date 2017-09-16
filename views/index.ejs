@@ -369,54 +369,54 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
     w=$(window).width();
        //About Page
 
-   $("#menu-about").on("click",function(){
-      $("#menu-events").removeClass("active");
-      $("#menu-home").removeClass("active");
-      $("#menu-team").removeClass("active");
-      $("#menu-contact").removeClass("active");
-      $("#menu-about").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-    });
+  //  $("#menu-about").on("click",function(){
+  //     $("#menu-events").removeClass("active");
+  //     $("#menu-home").removeClass("active");
+  //     $("#menu-team").removeClass("active");
+  //     $("#menu-contact").removeClass("active");
+  //     $("#menu-about").removeClass("active").addClass("active");
+  //     $(window).on("scroll",function(event){
+  //     event.preventDefault();
+  //    });
+  //   });
 
-   //events page
+  //  //events page
 
-   $("#menu-events").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-team").removeClass("active");
-    $("#menu-contact").removeClass("active");
-     $("#menu-events").removeClass("active").addClass("active");
-     $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-    });
+  //  $("#menu-events").on("click",function(){
+  //   $("#menu-about").removeClass("active");
+  //   $("#menu-home").removeClass("active");
+  //   $("#menu-team").removeClass("active");
+  //   $("#menu-contact").removeClass("active");
+  //    $("#menu-events").removeClass("active").addClass("active");
+  //    $(window).on("scroll",function(event){
+  //     event.preventDefault();
+  //    });
+  //   });
 
-   //team page
+  //  //team page
 
-    $("#menu-team").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-events").removeClass("active");
-    $("#menu-contact").removeClass("active");
-     $("#menu-team").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-  });
+  //   $("#menu-team").on("click",function(){
+  //   $("#menu-about").removeClass("active");
+  //   $("#menu-home").removeClass("active");
+  //   $("#menu-events").removeClass("active");
+  //   $("#menu-contact").removeClass("active");
+  //    $("#menu-team").removeClass("active").addClass("active");
+  //     $(window).on("scroll",function(event){
+  //     event.preventDefault();
+  //    });
+  // });
 
-    //contact page
-    $("#menu-contact").on("click",function(){
-    $("#menu-about").removeClass("active");
-    $("#menu-home").removeClass("active");
-    $("#menu-events").removeClass("active");
-    $("#menu-team").removeClass("active");
-     $("#menu-contact").removeClass("active").addClass("active");
-      $(window).on("scroll",function(event){
-      event.preventDefault();
-     });
-  });
+  //   //contact page
+  //   $("#menu-contact").on("click",function(){
+  //   $("#menu-about").removeClass("active");
+  //   $("#menu-home").removeClass("active");
+  //   $("#menu-events").removeClass("active");
+  //   $("#menu-team").removeClass("active");
+  //    $("#menu-contact").removeClass("active").addClass("active");
+  //     $(window).on("scroll",function(event){
+  //     event.preventDefault();
+  //    });
+  // });
 
     var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
     if(w<=768)
