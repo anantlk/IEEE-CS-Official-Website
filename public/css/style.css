@@ -25,7 +25,14 @@ overflow-x:hidden;
 }
 .top-bar
 {
-padding-right:40px !important;
+padding-right:20px !important;
+}
+@media only screen (max-width:1250px)
+{
+.top-bar
+{
+padding-right:50px !important;
+}
 }
 @media only screen and (max-width:767px)
 {
