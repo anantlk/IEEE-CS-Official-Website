@@ -33,7 +33,7 @@
   text-align: left;
   position: relative;
 }
-.entry .title {
+-.entry .title {
   margin-bottom: .5em;
   float: left;
   width: 33%;
@@ -95,7 +95,7 @@
     padding:80px 10px;
   }
 .entry .title:before{
-right:-10px
+right:-15px
 }
   .timeline-sec
   {
