@@ -41,6 +41,10 @@ padding-right:50px !important;
 {
 font-size:20px;
 }
+#team-content p
+{
+  font-size:14px !important;
+}
 }
 #Team-content
 {margin-top:10%;
