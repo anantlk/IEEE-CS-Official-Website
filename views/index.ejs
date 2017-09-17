@@ -6,7 +6,6 @@
    <meta name="discription" content="The official website of IEEE Computer Society, VIT University Vellore">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/flip.css">
     <link rel="stylesheet" href="/css/team-style.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/events-style.css"/>
@@ -14,18 +13,10 @@
     <script src="/js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="/js/smoothscroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="icon" href="/images/favicon.png"/>
    </head>
  <body>
-   <main id="main-reveal">
-   	<div class="cd-index cd-main-content">
-   		<div>
-   			<h1>What's the magic word?</h1>
-   		</div>
-   	</div>
-   </main>
    <div id="overlay" onclick="closeNav()"></div>
 
         <div class="container-fluid" id="main-content">
@@ -368,17 +359,6 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
         </div>
  </body>
   <script type="text/javascript">
-  var answer = "";
-  $('#main-content').fadeOut(0);
-  function please(){
-    answer = "please";
-  }
-  var timer = setInterval(function(){
-    // console.log("Yo");
-    if(answer.toLowerCase() == "please"){
-      start_animation();
-    }
-  }, 200)
 
      function begin_scroll(){
        w=$(window).width();
