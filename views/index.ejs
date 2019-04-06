@@ -42,11 +42,11 @@
                 <div class="pages col-lg-6 col-md-7 col-sm-9">
                   <div class="row">
                     <div id="pages" class="col-sm-12">
-                    <a href="#homepage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-home">HOME</p></div></a>
-                    <a href="#Aboutpage" class="smoothScroll"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
-                    <a href="#Eventspage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
-                    <a href="#Teampage" class="smoothScroll"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
-                    <a href="#Contactuspage" class="smoothScroll"><div class="top-bar c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-contact" id="menu-contact">CONTACT US</p></div></a>
+                    <a href="#homepage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-home">HOME</p></div></a>
+                    <a href="#Aboutpage"><div class="navtext col-sm-2" ><p class="nav-text" id="menu-about">ABOUT</p></div></a>
+                    <a href="#Eventspage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-events">EVENTS</p></div></a>
+                    <a href="#Teampage"><div class="navtext col-sm-2"><p class="nav-text" id="menu-team">TEAM</p></div></a>
+                    <a href="#contactuspage"><div class="top-bar c_text col-sm-3 col-md-4 col-lg-3"><p class="nav-contact">CONTACT US</p></div></a>
                     </div>
                 </div>
                 </div>
@@ -54,11 +54,11 @@
             </div>
                 <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="#homepage" class="smoothScroll" onclick="closeNav()">HOME</a>
-                  <a href="#Aboutpage"  class="smoothScroll" onclick="closeNav()">ABOUT</a>
-                  <a href="#Eventspage" class="smoothScroll" onclick="closeNav()">EVENTS</a>
-                  <a href="#Teampage" class="smoothScroll" onclick="closeNav()">TEAM</a>
-                  <a href="#Contactuspage" class="smoothScroll" onclick="closeNav()">CONTACT US</a>
+                  <a href="#homepage" onclick="closeNav()">HOME</a>
+                  <a href="#Aboutpage"  onclick="closeNav()">ABOUT</a>
+                  <a href="#Eventspage" onclick="closeNav()">EVENTS</a>
+                  <a href="#Teampage" onclick="closeNav()">TEAM</a>
+                  <a href="#contactuspage" onclick="closeNav()">CONTACT US</a>
                 </div>
               <div class="m_navbar">
                 <div class="row">
@@ -82,7 +82,7 @@
                 <div class="row">
               <div id="h_text">
               <p id="hometext">An elite group of engineers who specialize in<br> Computer Science.</p><br><br><br>
-                <p id="down-arrow"><a href="#Aboutpage" class="smoothScroll"><img id="downi" src="/images/arrow.png"/></a></p></div></div>
+                <p id="down-arrow"><a href="#Aboutpage"><img id="downi" src="/images/arrow.png"/></a></p></div></div>
               </div>
             </div>
             </section>
@@ -347,7 +347,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
                 </div>
                 </div>
             </section>
-            <section id="Contactuspage">
+            <section id="contactuspage">
                 <div id="ContactUs">
                   <div class="row">
                     <div id="ContactText">
@@ -387,7 +387,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
 
      function begin_scroll(){
        w=$(window).width();
-       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#contactuspage").offset().top;
        if(w<=768)
        {
            var h=$(".m_navbar").height();
@@ -466,7 +466,7 @@ IEEE-Computer Society partnered with Team RoverX and developed their official we
      }
      $(window).on("resize",function(){
    w=$(window).width();
-       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#Contactuspage").offset().top;
+       var x1=$("#Aboutpage").offset().top,x2=$("#Eventspage").offset().top,x3=$("#Teampage").offset().top,x4=$("#contactuspage").offset().top;
        if(w<=768)
        {
            var h=$(".m_navbar").height();
